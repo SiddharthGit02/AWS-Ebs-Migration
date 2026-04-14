@@ -23,8 +23,10 @@ mkdir -p /mnt/app_data/redis_storage
 ```
 
 Start application
+```
 sudo docker compose up -d
 http://<YOUR_EC2_PUBLIC_IP>:5000
+```
 
 ```
 sudo mkfs.ext4 /dev/nvme2n1
