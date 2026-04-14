@@ -38,6 +38,8 @@ Copy contents using rsync
 
 `sudo rsync -aHAXxv --numeric-ids /mnt/app_data/ /mnt/target_drive/`
 
+Stop application
+`docker-compose down`
 Swap drives 
 ```
 sudo umount /mnt/app_data
