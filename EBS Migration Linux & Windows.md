@@ -1,8 +1,4 @@
 EBS Migration Linux & Windows
-
-Gemini chat : 
-Linux :   https://gemini.google.com/app/eddfd44e74fe66ca?hl=en-IN
-Windows : https://gemini.google.com/app/f4b36d1a0a3329e9?hl=en-IN
 ------------------------------
 Create Ubuntu AWS Ec2
 Create 2 extra volumes and attach
