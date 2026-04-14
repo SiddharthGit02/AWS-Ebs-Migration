@@ -1,0 +1,22 @@
+services:
+  web:
+    image: python:3.9-alpine
+    command: sh -c "pip install flask redis && FLASK_APP=app.py flask run --host=0.0.0.0"
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+    working_dir: /code
+    depends_on:
+      - redis
+  redis:
+    image: redis:alpine
+    volumes:
+      - redis_data:/data
+volumes:
+  redis_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: /mnt/app_data/redis_storage # This forces Redis to save strictly to the mounted disk
+      o: bind
